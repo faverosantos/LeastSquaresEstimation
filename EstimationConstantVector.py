@@ -4,7 +4,6 @@ import numpy as np
 def CalculateLeastSquaresSolution(Hmatrix, Ymatrix):
     # Enter Your Code Here to calculate the least Squares Solution
     Xmatrix = []
-
     Rmatrix = np.matmul(np.transpose(Hmatrix), Hmatrix)
     Rmatrix = np.linalg.inv(Rmatrix)
     Rmatrix = np.matmul(Rmatrix, np.transpose(Hmatrix))
